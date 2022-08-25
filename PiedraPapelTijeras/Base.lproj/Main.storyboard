@@ -54,13 +54,14 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAr-3c-XyU" userLabel="ContadorJugador">
                                                 <rect key="frame" x="0.0" y="66.666666666666686" width="182" height="18"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="contadorJ"/>
+                                                <fontDescription key="fontDescription" name="KohinoorGujarati-Regular" family="Kohinoor Gujarati" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLi-sP-gJA" userLabel="ContadorCPU">
                                                 <rect key="frame" x="182" y="66.666666666666686" width="182" height="18"/>
-                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="KohinoorGujarati-Regular" family="Kohinoor Gujarati" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -70,9 +71,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWM-6c-ZAE" userLabel="Resultado">
-                                                <rect key="frame" x="36.333333333333343" y="112.66666666666666" width="291.33333333333326" height="30.666666666666657"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWM-6c-ZAE" userLabel="Resultado">
+                                                <rect key="frame" x="36.333333333333343" y="111.66666666666666" width="291.33333333333326" height="32.666666666666657"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="KohinoorGujarati-Regular" family="Kohinoor Gujarati" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
@@ -95,7 +97,7 @@
                                             <constraint firstItem="aNi-aL-brx" firstAttribute="centerY" secondItem="bsB-Xg-HcF" secondAttribute="centerY" multiplier="0.65" id="kf2-RT-8CR"/>
                                             <constraint firstItem="dLi-sP-gJA" firstAttribute="leading" secondItem="JAr-3c-XyU" secondAttribute="trailing" id="mCs-3B-WcA"/>
                                             <constraint firstItem="aNi-aL-brx" firstAttribute="width" secondItem="bsB-Xg-HcF" secondAttribute="width" multiplier="0.1" id="mjf-1n-2lK"/>
-                                            <constraint firstItem="dWM-6c-ZAE" firstAttribute="height" secondItem="bsB-Xg-HcF" secondAttribute="height" multiplier="0.17" id="mpQ-Xp-ovH"/>
+                                            <constraint firstItem="dWM-6c-ZAE" firstAttribute="height" secondItem="bsB-Xg-HcF" secondAttribute="height" multiplier="0.18" id="mpQ-Xp-ovH"/>
                                             <constraint firstItem="aNi-aL-brx" firstAttribute="height" secondItem="bsB-Xg-HcF" secondAttribute="height" multiplier="0.2" id="sgS-PS-bdb"/>
                                             <constraint firstItem="dWM-6c-ZAE" firstAttribute="width" secondItem="bsB-Xg-HcF" secondAttribute="width" multiplier="0.8" id="tDE-F9-1H5"/>
                                             <constraint firstItem="JAr-3c-XyU" firstAttribute="width" secondItem="bsB-Xg-HcF" secondAttribute="width" multiplier="0.5" id="uhD-pb-XP8"/>
@@ -112,14 +114,23 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npZ-Jw-mc0" userLabel="piedra">
                                                 <rect key="frame" x="36.333333333333329" y="0.0" width="145.66666666666669" height="146"/>
                                                 <state key="normal" title="Button" image="piedra"/>
+                                                <connections>
+                                                    <action selector="botonPiedra:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zsf-0b-bB8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPn-TT-Fln" userLabel="tijeras">
                                                 <rect key="frame" x="109.33333333333333" y="146" width="145.33333333333337" height="145.66666666666663"/>
                                                 <state key="normal" title="Button" image="tijeras"/>
+                                                <connections>
+                                                    <action selector="botonTijeras:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Smp-jI-pjV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsb-kq-MPB" userLabel="papel">
                                                 <rect key="frame" x="182" y="0.0" width="145.66666666666663" height="146"/>
                                                 <state key="normal" title="Button" image="papel"/>
+                                                <connections>
+                                                    <action selector="botonPapel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZFB-Nl-ueF"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -150,6 +161,9 @@
                                                 <state key="normal" title="Reiniciar">
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="botonReiniciar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsu-Ut-Oh3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -210,6 +224,11 @@
                             <constraint firstItem="0zh-2L-Gi0" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.85" id="jhf-U3-2rs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contadorCPU" destination="dLi-sP-gJA" id="AHo-M5-4Ad"/>
+                        <outlet property="contadorJugador" destination="JAr-3c-XyU" id="EdM-p5-bf3"/>
+                        <outlet property="resultadoTextField" destination="dWM-6c-ZAE" id="34a-Sg-nXc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,6 +15,9 @@
 		C2CF590C28AF11FA001C80BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2CF590A28AF11FA001C80BE /* LaunchScreen.storyboard */; };
 		C2CF591728AF11FA001C80BE /* PiedraPapelTijerasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CF591628AF11FA001C80BE /* PiedraPapelTijerasTests.swift */; };
 		C2CF592228AF11FA001C80BE /* PiedraPapelTijerasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CF592128AF11FA001C80BE /* PiedraPapelTijerasUITests.swift */; };
+		C2E8725728B70ABC00685EAF /* Juego.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E8725628B70ABC00685EAF /* Juego.swift */; };
+		C2E8725F28B70B1D00685EAF /* JuegoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E8725E28B70B1D00685EAF /* JuegoTests.swift */; };
+		C2E97E8D28B7D60B00BB4DF6 /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E97E8C28B7D60B00BB4DF6 /* CPU.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		C2CF591D28AF11FA001C80BE /* PiedraPapelTijerasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiedraPapelTijerasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CF592128AF11FA001C80BE /* PiedraPapelTijerasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiedraPapelTijerasUITests.swift; sourceTree = "<group>"; };
 		C2CF592328AF11FA001C80BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E8725628B70ABC00685EAF /* Juego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juego.swift; sourceTree = "<group>"; };
+		C2E8725E28B70B1D00685EAF /* JuegoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegoTests.swift; sourceTree = "<group>"; };
+		C2E97E8C28B7D60B00BB4DF6 /* CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		C2CF58FE28AF11F9001C80BE /* PiedraPapelTijeras */ = {
 			isa = PBXGroup;
 			children = (
+				C2E8724F28B7014100685EAF /* Model */,
 				C2CF58FF28AF11F9001C80BE /* AppDelegate.swift */,
 				C2CF590128AF11F9001C80BE /* SceneDelegate.swift */,
 				C2CF590328AF11F9001C80BE /* ViewController.swift */,
@@ -113,6 +120,7 @@
 		C2CF591528AF11FA001C80BE /* PiedraPapelTijerasTests */ = {
 			isa = PBXGroup;
 			children = (
+				C2E8725428B70A9500685EAF /* Model */,
 				C2CF591628AF11FA001C80BE /* PiedraPapelTijerasTests.swift */,
 				C2CF591828AF11FA001C80BE /* Info.plist */,
 			);
@@ -126,6 +134,47 @@
 				C2CF592328AF11FA001C80BE /* Info.plist */,
 			);
 			path = PiedraPapelTijerasUITests;
+			sourceTree = "<group>";
+		};
+		C2E8724F28B7014100685EAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2E97E9128B7D81C00BB4DF6 /* Util */,
+				C2E8725028B7017700685EAF /* ValueObject */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2E8725028B7017700685EAF /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				C2E97E8C28B7D60B00BB4DF6 /* CPU.swift */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		C2E8725428B70A9500685EAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2E8725528B70A9F00685EAF /* ValueObject */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2E8725528B70A9F00685EAF /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				C2E8725E28B70B1D00685EAF /* JuegoTests.swift */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		C2E97E9128B7D81C00BB4DF6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C2E8725628B70ABC00685EAF /* Juego.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E8725728B70ABC00685EAF /* Juego.swift in Sources */,
 				C2CF590428AF11F9001C80BE /* ViewController.swift in Sources */,
+				C2E97E8D28B7D60B00BB4DF6 /* CPU.swift in Sources */,
 				C2CF590028AF11F9001C80BE /* AppDelegate.swift in Sources */,
 				C2CF590228AF11F9001C80BE /* SceneDelegate.swift in Sources */,
 			);
@@ -268,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E8725F28B70B1D00685EAF /* JuegoTests.swift in Sources */,
 				C2CF591728AF11FA001C80BE /* PiedraPapelTijerasTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
