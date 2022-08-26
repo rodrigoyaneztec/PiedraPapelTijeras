@@ -19,7 +19,7 @@ class JuegoTests: XCTestCase {
         let mensajeResultado = String(C)
         
         // THEN
-        let mensajeEsperado = "Haz ganado, la CPU puso tijeras."
+        let mensajeEsperado = "Has ganado, la CPU puso tijeras."
         XCTAssertEqual(mensajeEsperado, mensajeResultado)
     }
     
@@ -32,7 +32,7 @@ class JuegoTests: XCTestCase {
         let mensajeResultado = String(C)
         
         // THEN
-        let mensajeEsperado = "Haz perdido, la CPU puso papel."
+        let mensajeEsperado = "Has perdido, la CPU puso papel."
         XCTAssertEqual(mensajeEsperado, mensajeResultado)
     }
     
