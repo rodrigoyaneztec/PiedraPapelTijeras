@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20CE53A28B83399001926D5 /* CPUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20CE53928B83399001926D5 /* CPUTests.swift */; };
 		C2CF590028AF11F9001C80BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CF58FF28AF11F9001C80BE /* AppDelegate.swift */; };
 		C2CF590228AF11F9001C80BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CF590128AF11F9001C80BE /* SceneDelegate.swift */; };
 		C2CF590428AF11F9001C80BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CF590328AF11F9001C80BE /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C20CE53928B83399001926D5 /* CPUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUTests.swift; sourceTree = "<group>"; };
 		C2CF58FC28AF11F9001C80BE /* PiedraPapelTijeras.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PiedraPapelTijeras.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CF58FF28AF11F9001C80BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2CF590128AF11F9001C80BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C20CE53E28B8361B001926D5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C2E8725E28B70B1D00685EAF /* JuegoTests.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		C2CF58F328AF11F9001C80BE = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +166,7 @@
 		C2E8725428B70A9500685EAF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C20CE53E28B8361B001926D5 /* Util */,
 				C2E8725528B70A9F00685EAF /* ValueObject */,
 			);
 			path = Model;
@@ -164,7 +175,7 @@
 		C2E8725528B70A9F00685EAF /* ValueObject */ = {
 			isa = PBXGroup;
 			children = (
-				C2E8725E28B70B1D00685EAF /* JuegoTests.swift */,
+				C20CE53928B83399001926D5 /* CPUTests.swift */,
 			);
 			path = ValueObject;
 			sourceTree = "<group>";
@@ -320,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2E8725F28B70B1D00685EAF /* JuegoTests.swift in Sources */,
+				C20CE53A28B83399001926D5 /* CPUTests.swift in Sources */,
 				C2CF591728AF11FA001C80BE /* PiedraPapelTijerasTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

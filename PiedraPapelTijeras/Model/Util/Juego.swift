@@ -7,57 +7,61 @@
 
 import Foundation
 
+// Clase Util para desarrollar la lógica del juego.
+
 public class Juego {
     
-    let cpu = CPU(valor : "", contador : 0)
     var contadorJugador = 0
     var contadorCPU = 0
-    var mensaje = ""
+    var mensajeResultado = ""
     
-    func siguienteJugada (jugador : String) -> (Int, Int, String) {
-        
-        let valorCPU = cpu.generarValor()
-       
-        if (jugador == valorCPU) {
-            // mandar mensaje de empate
-            mensaje = "¡EMPATE! Juega de nuevo."
+    /// Función para realizar la jugada siguiente.
+    /// - Parameters:
+    ///   - jugador: Objeto seleccionado por el jugador. Por ejemplo "TIJERAS".
+    ///   - cpu: Objeto seleccionado aleatoriamente por la computadora Por ejemplo "PAPEL".
+    /// - Returns: Regresa una tupla de 3 elementos: contador actualizado del jugador, contador actualizado del CPU y mensaje que se mostrará en pantalla.
+    
+    func siguienteJugada (jugador : String, cpu : String) -> (Int, Int, String) {
+           
+        if (jugador == cpu) {
+            mensajeResultado = "¡EMPATE! Juega de nuevo."
 
-        } else if (jugador == "PIEDRA" && valorCPU == "PAPEL"){
+        } else if (jugador == "PIEDRA" && cpu == "PAPEL"){
             contadorCPU += 1
-            mensaje = "Haz perdido, la CPU puso papel."
+            mensajeResultado = "Haz perdido, la CPU puso papel."
 
-        } else if (jugador == "PIEDRA" && valorCPU == "TIJERAS"){
+        } else if (jugador == "PIEDRA" && cpu == "TIJERAS"){
             contadorJugador += 1
-            mensaje = "Haz ganado, la CPU puso tijeras."
+            mensajeResultado = "Haz ganado, la CPU puso tijeras."
 
-        } else if (jugador == "PAPEL" && valorCPU == "PIEDRA"){
+        } else if (jugador == "PAPEL" && cpu == "PIEDRA"){
             contadorJugador += 1
-            mensaje = "Haz ganado, la CPU puso piedra."
+            mensajeResultado = "Haz ganado, la CPU puso piedra."
 
-        } else if (jugador == "PAPEL" && valorCPU == "TIJERAS"){
+        } else if (jugador == "PAPEL" && cpu == "TIJERAS"){
             contadorCPU += 1
-            mensaje = "Haz perdido, la CPU puso tijeras."
+            mensajeResultado = "Haz perdido, la CPU puso tijeras."
 
-        } else if (jugador == "TIJERAS" && valorCPU == "PAPEL"){
+        } else if (jugador == "TIJERAS" && cpu == "PAPEL"){
             contadorJugador += 1
-            mensaje = "Haz ganado, la CPU puso papel."
+            mensajeResultado = "Haz ganado, la CPU puso papel."
 
+        } else if (jugador == "TIJERAS" && cpu == "PIEDRA"){
+            contadorCPU += 1
+            mensajeResultado = "Haz perdido, la CPU puso piedra."
         } else {
-            // TIJERAS vs PIEDRA
-            
-            contadorCPU += 1
-            mensaje = "Haz perdido, la CPU puso piedra."
+            mensajeResultado = "Error en la aplicacion. Revisar."
         }
         
-        return (contadorJugador, contadorCPU, mensaje)
+        return (contadorJugador, contadorCPU, mensajeResultado)
     }
        
     func reiniciarJuego () -> (Int, Int, String) {
         contadorJugador = 0
         contadorCPU = 0
-        mensaje = "¡JUEGO NUEVO!"
+        mensajeResultado = "¡JUEGO NUEVO!"
         
-        return (contadorJugador, contadorCPU, mensaje)
+        return (contadorJugador, contadorCPU, mensajeResultado)
     }
     
 }

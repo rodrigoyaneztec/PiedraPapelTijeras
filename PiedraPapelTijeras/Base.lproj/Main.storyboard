@@ -54,13 +54,14 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAr-3c-XyU" userLabel="ContadorJugador">
                                                 <rect key="frame" x="0.0" y="66.666666666666686" width="182" height="18"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="contadorJ"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="contadorJ" label="contadorJugador"/>
                                                 <fontDescription key="fontDescription" name="KohinoorGujarati-Regular" family="Kohinoor Gujarati" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLi-sP-gJA" userLabel="ContadorCPU">
                                                 <rect key="frame" x="182" y="66.666666666666686" width="182" height="18"/>
+                                                <accessibility key="accessibilityConfiguration" label="contadorCPU"/>
                                                 <fontDescription key="fontDescription" name="KohinoorGujarati-Regular" family="Kohinoor Gujarati" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -73,6 +74,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWM-6c-ZAE" userLabel="Resultado">
                                                 <rect key="frame" x="36.333333333333343" y="111.66666666666666" width="291.33333333333326" height="32.666666666666657"/>
+                                                <accessibility key="accessibilityConfiguration" label="resultadoTextField"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="KohinoorGujarati-Regular" family="Kohinoor Gujarati" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -113,6 +115,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npZ-Jw-mc0" userLabel="piedra">
                                                 <rect key="frame" x="36.333333333333329" y="0.0" width="145.66666666666669" height="146"/>
+                                                <accessibility key="accessibilityConfiguration" label="botonPiedra"/>
                                                 <state key="normal" title="Button" image="piedra"/>
                                                 <connections>
                                                     <action selector="botonPiedra:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zsf-0b-bB8"/>
@@ -120,6 +123,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPn-TT-Fln" userLabel="tijeras">
                                                 <rect key="frame" x="109.33333333333333" y="146" width="145.33333333333337" height="145.66666666666663"/>
+                                                <accessibility key="accessibilityConfiguration" label="botonTijeras"/>
                                                 <state key="normal" title="Button" image="tijeras"/>
                                                 <connections>
                                                     <action selector="botonTijeras:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Smp-jI-pjV"/>
@@ -127,6 +131,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsb-kq-MPB" userLabel="papel">
                                                 <rect key="frame" x="182" y="0.0" width="145.66666666666663" height="146"/>
+                                                <accessibility key="accessibilityConfiguration" label="botonPapel"/>
                                                 <state key="normal" title="Button" image="papel"/>
                                                 <connections>
                                                     <action selector="botonPapel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZFB-Nl-ueF"/>
@@ -157,6 +162,7 @@
                                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4o-M3-iQ7">
                                                 <rect key="frame" x="127.33333333333334" y="18" width="109.33333333333334" height="36"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <accessibility key="accessibilityConfiguration" label="botonReiniciar"/>
                                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                                 <state key="normal" title="Reiniciar">
                                                     <color key="titleColor" systemColor="labelColor"/>
