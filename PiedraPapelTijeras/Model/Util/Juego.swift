@@ -28,27 +28,27 @@ public class Juego {
 
         } else if (jugador == "PIEDRA" && cpu == "PAPEL"){
             contadorCPU += 1
-            mensajeResultado = "Haz perdido, la CPU puso papel."
+            mensajeResultado = "Has perdido, la CPU puso papel."
 
         } else if (jugador == "PIEDRA" && cpu == "TIJERAS"){
             contadorJugador += 1
-            mensajeResultado = "Haz ganado, la CPU puso tijeras."
+            mensajeResultado = "Has ganado, la CPU puso tijeras."
 
         } else if (jugador == "PAPEL" && cpu == "PIEDRA"){
             contadorJugador += 1
-            mensajeResultado = "Haz ganado, la CPU puso piedra."
+            mensajeResultado = "Has ganado, la CPU puso piedra."
 
         } else if (jugador == "PAPEL" && cpu == "TIJERAS"){
             contadorCPU += 1
-            mensajeResultado = "Haz perdido, la CPU puso tijeras."
+            mensajeResultado = "Has perdido, la CPU puso tijeras."
 
         } else if (jugador == "TIJERAS" && cpu == "PAPEL"){
             contadorJugador += 1
-            mensajeResultado = "Haz ganado, la CPU puso papel."
+            mensajeResultado = "Has ganado, la CPU puso papel."
 
         } else if (jugador == "TIJERAS" && cpu == "PIEDRA"){
             contadorCPU += 1
-            mensajeResultado = "Haz perdido, la CPU puso piedra."
+            mensajeResultado = "Has perdido, la CPU puso piedra."
         } else {
             mensajeResultado = "Error en la aplicacion. Revisar."
         }
